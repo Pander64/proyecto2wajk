@@ -58,9 +58,16 @@ public class Arregloswajk
     }
     public static void ordArr(String arr[], char ord) {
         // Se escribe le proceso de ordenar
+        // No se como hacer de strings
     }
     public static void ordArr(float arr[], char ord) {
-        // Se escribe le proceso de ordenar
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > arr[i+1]) {
+                float aux = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = aux;
+            }
+        }
     }
 
     // Operaciones entre matrices
